@@ -69,24 +69,22 @@ public class MSView {
                         button.setText("💣");
                         button.setStyle("-fx-background-color: #F84156; -fx-text-fill: white; -fx-font-family: Arial; -fx-font-size: 10;");
                         MSModel.reveal(grid, x, y);
-                        fire(grid1,grid2);
-
                     } else {
                         int numBombsAround = MSModel.getNumBombs(grid, x, y);
                         if (numBombsAround == 0) {
                             MSModel.reveal(grid, x, y);
-                            fire(grid1,grid2);
                         } else {
                             button.setText(String.valueOf(numBombsAround));
-                            fire(grid1,grid2);
                         }
                         button.setStyle("-fx-background-color: #88CCEE; -fx-text-fill: white; -fx-font-family: Arial; -fx-font-size: 10;");
                     }
                 });
             }
         }
+        fire(grid2);
         return grid;
     }
+
     public GridPane getGrid1() {
         return this.grid1;
     }

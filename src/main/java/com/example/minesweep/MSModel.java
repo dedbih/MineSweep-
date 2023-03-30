@@ -27,10 +27,10 @@ public class MSModel {
         }
     }
 
-    public static void fire(GridPane grid1, GridPane grid2) {
+    public static void fire(GridPane grid2) {
         int randi = (int) (Math.random() * 7);
         int randj = (int) (Math.random() * 7);
-        
+
         Button button2 = (Button) grid2.getChildren().get(randj * 8 + randi);
         System.out.println("Fired button (" + randi + ", " + randj + ") in grid2");
         button2.fire();

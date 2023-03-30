@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/minesweep/MSModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/minesweep/MSModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/minesweep/MSView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/minesweep/MSView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/minesweep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/minesweep/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <workItem from="1680029969229" duration="7621000" />
       <workItem from="1680098264136" duration="61000" />
       <workItem from="1680098389494" duration="1957000" />
-      <workItem from="1680144142891" duration="3803000" />
+      <workItem from="1680144142891" duration="6002000" />
     </task>
     <task id="LOCAL-00001" summary="Progreso 29/3, problema con onHit del botón">
       <created>1680144497279</created>
@@ -98,5 +99,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Progreso 29/3, problema con onHit del botón" />
     <option name="LAST_COMMIT_MESSAGE" value="Progreso 29/3, problema con onHit del botón" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.reflect.InvocationTargetException" package="java.lang.reflect" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
