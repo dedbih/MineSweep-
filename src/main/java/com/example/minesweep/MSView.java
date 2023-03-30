@@ -11,10 +11,13 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+
+import static com.example.minesweep.MSModel.fire;
+
 public class MSView {
 
-    private GridPane grid1;
-    private GridPane grid2;
+    public GridPane grid1;
+    public GridPane grid2;
 
     public void start(Stage primaryStage) {
         grid1 = createGrid();
@@ -66,16 +69,16 @@ public class MSView {
                         button.setText("💣");
                         button.setStyle("-fx-background-color: #F84156; -fx-text-fill: white; -fx-font-family: Arial; -fx-font-size: 10;");
                         MSModel.reveal(grid, x, y);
-                        Button otherButton = (Button) grid2.getChildren().get(y * 8 + x);
-                        otherButton.fire();
+                        fire(grid1,grid2);
+
                     } else {
                         int numBombsAround = MSModel.getNumBombs(grid, x, y);
                         if (numBombsAround == 0) {
                             MSModel.reveal(grid, x, y);
+                            fire(grid1,grid2);
                         } else {
                             button.setText(String.valueOf(numBombsAround));
-                            Button otherButton = (Button) grid2.getChildren().get(y * 8 + x);
-                            otherButton.fire(); //Error está aqui
+                            fire(grid1,grid2);
                         }
                         button.setStyle("-fx-background-color: #88CCEE; -fx-text-fill: white; -fx-font-family: Arial; -fx-font-size: 10;");
                     }
@@ -84,5 +87,10 @@ public class MSView {
         }
         return grid;
     }
-
+    public GridPane getGrid1() {
+        return this.grid1;
+    }
+    public GridPane getGrid2() {
+        return this.grid2;
+    }
 }
